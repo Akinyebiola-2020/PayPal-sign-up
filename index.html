@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<title>Log in to your PayPal account</title>
+</head>
+<style>
+	.container{
+		width: 50%;
+		margin:10px auto;
+		display:flex;
+		flex-direction: column;
+		height: 100vh;
+		justify-content: center;
+		align-items: center;
+		padding: 10px;
+
+	}
+
+	form{
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+
+	}
+	form input{
+	width: 275px;
+	border: 1px solid black;
+		height: 45px;
+		padding-left: 10px;
+		outline: none;
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+		border-bottom-right-radius: 5px;
+		border-bottom-left-radius: 5px;
+	}
+
+	form input:focus{
+		border: 1px solid darkblue;
+	}
+	hr{
+		width: 90%;
+		opacity: 0.3;
+
+	}
+	p{
+		color: #1560bd;
+		margin-left: -150px;
+		font-size: 18px;
+		cursor: pointer;
+	}
+
+	#option{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 5px;
+	}
+
+	#signLoginDiv{
+		gap: 15px;
+		display: flex;
+		flex-direction: column;
+
+	}
+	button{
+		width: 275px;
+		padding: 10px 20px;
+		border-radius: 30px;
+		font-size: 17px;
+		border: none;
+		cursor: pointer;
+	}
+
+	::placeholder{
+		font-size: 18px;
+	}
+	.fa-paypal{
+		text-align: center;
+		font-size: 30px;
+		color: #1560bd;
+		margin: 20px auto;
+	}
+
+	
+</style>
+
+<body>
+
+	<div class="container">
+		<i class="fa fa-paypal" aria-hidden = "true"></i>
+		<form>
+			<input type="text" name="email" placeholder="Email or mobile number">
+			<input type="password" name="password" placeholder="Password">
+		</form>
+		<p>Forgot password?</p>
+		<div id="signLoginDiv">
+			<button style="background: #192bc2; color: white;">Log In</button>
+			<div id="option">
+				<hr> 
+				 <span>or</span>
+				<hr>
+			</div>
+			<button style="border: 1px solid black; font-weight: bold;">Sign Up</button>
+		</div>
+
+
+		
+	</div>
+
+</body>
+</html>
